@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "public",
+    "redirects": [
+      {
+        "source": "/coc",
+        "destination": "https://developers.google.com/programs/community/gdg/resources/#code-of-conduct",
+        "type": 302
+      }
+    ]
+  }
+}

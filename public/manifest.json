@@ -1,0 +1,16 @@
+{
+  "short_name": "GDG Madison",
+  "name": "GDG Madison",
+  "description": "GDG Madison meets on the 15th of every month.",
+  "background_color": "#2196F3",
+  "theme_color": "#2196F3",
+  "icons": [
+    {
+      "src": "/img/gdg-chevron.png",
+      "sizes": "1400x1400",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "browser"
+}

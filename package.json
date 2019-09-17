@@ -1,0 +1,29 @@
+{
+  "name": "gdgmadison-com",
+  "version": "1.0.0",
+  "description": "GDG Madison meets on the 15th of every month.",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve public",
+    "deploy": "firebase deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdgmadison/gdgmadison-com.git"
+  },
+  "keywords": [
+    "gdg",
+    "gdg-madison"
+  ],
+  "author": "Abraham Williams <abraham@abrah.am>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdgmadison/gdgmadison-com/issues"
+  },
+  "homepage": "https://github.com/gdgmadison/gdgmadison-com#readme",
+  "devDependencies": {
+    "firebase-tools": "^7.3.2",
+    "serve": "^11.1.0"
+  }
+}
