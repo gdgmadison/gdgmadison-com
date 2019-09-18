@@ -2,11 +2,13 @@
   "name": "gdgmadison-com",
   "version": "1.0.0",
   "description": "GDG Madison meets on the 15th of every month.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "start": "serve public",
+    "start": "webpack-dev-server",
+    "predeploy": "npm run build",
     "deploy": "firebase deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,18 @@
   },
   "homepage": "https://github.com/gdgmadison/gdgmadison-com#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "5.0.4",
+    "css-loader": "3.2.0",
     "firebase-tools": "7.3.2",
-    "serve": "11.1.0"
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "serve": "11.1.0",
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.8.1"
+  },
+  "dependencies": {
+    "materialize-css": "1.0.0"
   }
 }
