@@ -34,7 +34,7 @@
     "serve": "11.1.0",
     "webpack": "4.40.2",
     "webpack-cli": "3.3.9",
-    "webpack-dev-server": "3.8.1"
+    "webpack-dev-server": "3.8.2"
   },
   "dependencies": {
     "materialize-css": "1.0.0"
