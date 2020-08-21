@@ -9,7 +9,7 @@
     "fix": "prettier --write .",
     "lint": "prettier --check .",
     "predeploy": "npm run build",
-    "start": "webpack-dev-server"
+    "start": "firebase emulators:exec \"NODE_ENV=development npm run build\""
   },
   "engines": {
     "node": "12"

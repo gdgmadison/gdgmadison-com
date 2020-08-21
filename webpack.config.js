@@ -4,6 +4,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+const mode = process.env.NODE_ENV === 'development' ? 'development' : 'production';
+
 const patterns = [
   {
     from: 'src/img',
@@ -20,12 +22,14 @@ const patterns = [
 ];
 
 module.exports = {
+  mode,
+  watch: mode === 'development',
   entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: './public',
   },
   module: {
     rules: [
@@ -38,6 +42,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      cache: false, // https://github.com/jantimon/html-webpack-plugin/issues/1476
       template: './src/index.html',
       files: {
         css: ['./index.css'],
