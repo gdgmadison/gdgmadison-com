@@ -11,6 +11,9 @@
     "predeploy": "npm run build",
     "start": "webpack-dev-server"
   },
+  "engines": {
+    "node": "12"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gdgmadison/gdgmadison-com.git"
