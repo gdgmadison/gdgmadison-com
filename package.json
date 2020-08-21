@@ -4,10 +4,12 @@
   "description": "GDG Madison meets on the 15th of every month.",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
-    "predeploy": "npm run build",
+    "build": "webpack",
     "deploy": "firebase deploy",
-    "build": "webpack"
+    "fix": "prettier --write .",
+    "lint": "prettier --check .",
+    "predeploy": "npm run build",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "firebase-tools": "8.8.1",
     "html-webpack-plugin": "4.3.0",
     "mini-css-extract-plugin": "0.10.0",
+    "prettier": "2.0.5",
     "serve": "11.3.2",
     "webpack": "4.44.1",
     "webpack-cli": "3.3.12",
