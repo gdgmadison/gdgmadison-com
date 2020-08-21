@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
         "source": "/coc",
@@ -8,5 +9,14 @@
         "type": 302
       }
     ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4000
+    }
   }
 }
