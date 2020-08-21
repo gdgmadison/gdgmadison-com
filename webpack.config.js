@@ -2,7 +2,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
+const patterns = [
+  {
+    from: 'src/img',
+    to: 'img',
+  },
+  {
+    from: 'src/404.html',
+    to: '404.html',
+  },
+  {
+    from: 'src/manifest.json',
+    to: 'manifest.json',
+  },
+];
 
 module.exports = {
   entry: './src/js/index.js',
@@ -33,19 +48,6 @@ module.exports = {
       chunkFilename: '[id].css',
       ignoreOrder: false,
     }),
-    new CopyWebpackPlugin([
-      {
-        from: 'src/img',
-        to: 'img',
-      },
-      {
-        from: 'src/404.html',
-        to: '404.html',
-      },
-      {
-        from: 'src/manifest.json',
-        to: 'manifest.json',
-      },
-    ]),
+    new CopyPlugin({ patterns }),
   ],
 };
