@@ -30,7 +30,7 @@
   "homepage": "https://github.com/gdgmadison/gdgmadison-com#readme",
   "devDependencies": {
     "clean-webpack-plugin": "3.0.0",
-    "copy-webpack-plugin": "7.0.0",
+    "copy-webpack-plugin": "8.0.0",
     "css-loader": "5.0.2",
     "firebase-tools": "9.4.0",
     "html-webpack-plugin": "5.2.0",
