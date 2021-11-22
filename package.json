@@ -34,7 +34,7 @@
     "css-loader": "6.5.1",
     "firebase-tools": "9.22.0",
     "html-webpack-plugin": "5.5.0",
-    "mini-css-extract-plugin": "2.4.4",
+    "mini-css-extract-plugin": "2.4.5",
     "prettier": "2.4.1",
     "serve": "13.0.2",
     "webpack": "5.64.2",
