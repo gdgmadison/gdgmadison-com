@@ -12,7 +12,8 @@
     "start": "firebase emulators:exec \"NODE_ENV=development npm run build\""
   },
   "engines": {
-    "node": "12"
+    "node": "16",
+    "npm": "8"
   },
   "repository": {
     "type": "git",

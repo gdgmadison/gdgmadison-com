@@ -4,11 +4,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        node-version: [12, 14]
-    name: Build on Node ${{ matrix.node-version }}
+    name: Build
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
